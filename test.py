@@ -44,11 +44,11 @@ def recognize_face(img_path):
     return recognized_name, max_sim
 
 # 示例：注册人脸
-register_face('image1.jpg', 'Person1')
-register_face('image2.jpg', 'Person2')
+register_face('test_images/image1.jpg', 'Person1')
+register_face('test_images/image2.jpg', 'Person2')
 
 # 示例：识别人脸
-test_img_path = 'test_image.jpg'
+test_img_path = 'test_images/test_image.jpg'
 recognized_name, similarity = recognize_face(test_img_path)
 if recognized_name:
     print(f"Recognized: {recognized_name}, Similarity: {similarity:.2f}")
